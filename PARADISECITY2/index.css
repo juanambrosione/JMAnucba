@@ -222,21 +222,27 @@ footer{
 .redes{
     display: flex;
     justify-content: center;
-    color: white;
     font-size: 2em;
+}
+.redes a{
+    text-decoration: none;
+    color: ivory;
 }
 .face{
     margin-right: 10px;
 }
 .face:hover{
     color: 3b5998;
+    cursor: pointer;
 }
 .twitch:hover{
     color: 9146ff;
+    cursor: pointer;
 }
 .youtube{
     margin-left:10px;
 }
 .youtube:hover{
     color: ff0000;
+    cursor: pointer;
 }
