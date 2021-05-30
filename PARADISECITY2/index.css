@@ -1,52 +1,56 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
-    margin: 0;
-    padding: 0;
-    background-color: hsla(0, 0%, 0%, 0.973);
+     margin: 0; 
+     padding:0 ;
+    background-color: #000000f8;
 }
-header{
-    margin-bottom: 20px;
-    width: 100%;
-    box-shadow: -5px 35px 42px -5px rgba(57, 3, 78, 0.75);
--webkit-box-shadow: -5px 35px 42px -5px rgba(57, 3, 78, 0.75);
--moz-box-shadow: -5px 35px 42px -5px rgba(57, 3, 78, 0.75);
-  
-}
+
 .image-port{
    width: 100%;
    height: 75%;
-   background: linear-gradient(to right, rgba(255,255,255,0), hsla(214, 82%, 62%, 0.473)), url(/festival.jpg);
-   background-position: center;
+   background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-carnival-music-festival-music-festival-promotion-carnival-music-festival-image_13943.jpg) ;
    background-size: cover;
-   display: flex;
-   justify-content: center;
-   align-items: center;
 }
-.image-port h1{
-    font-family:'Goblin One', cursive;
-    font-size: 50px;
-    color: hsla(252, 41%, 73%, 0.986);
-}
-.image-port h1:hover{
-  color: hsla(298, 48%, 40%, 0.986);
+.image-port h2{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Londrina Solid', cursive;
+    font-size: 100px;
+    color: lightgoldenrodyellow;
 }
 nav{
     width: 100%;
-    padding: 20px;
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
     justify-content: space-around;
+    align-items: center;
     position: fixed;
-    background-color: hsla(260, 57%, 64%, 0.596);
+    background-color: hsla(0, 0%, 8%, 0.562);
 }
 nav a{
-    font-family:'Goblin One', cursive;
+
+    font-family:'Londrina Solid', cursive;
+    font-size: 20px;
     text-decoration: none;
-    color: hsla(252, 51%, 33%, 0.986);
+    color: #fdfdfdfb;
 }
 
 nav a:hover{
-    color:hsla(283, 55%, 38%, 0.986);
+    color:rgba(201, 14, 201, 0.993);
 }
+.h1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+   justify-content: flex-end;
+    text-align: center;
+    font-family:'Londrina Solid', cursive;
+    color:rgba(201, 14, 201, 0.993);
+} 
 
 .section-inicio{
     width: 100%;
@@ -55,57 +59,36 @@ nav a:hover{
 }
 .card-inicio{
     margin-top: 30px;
-    width: 100%;
+    width: 50%;
     padding: 40px;
     display: flex;
-    background-color: thistle;
+    background-color: rgba(0,0,0,0);
     border-radius: 20px;
-    /* box-shadow: -4px 8px 62px 5px rgba(122, 1, 76, 0.75);
--webkit-box-shadow: -4px 8px 62px 5px rgba(122, 1, 76, 0.75);
--moz-box-shadow: -4px 8px 62px 5px rgba(122, 1, 76, 0.75); */
-}
-.card-inicio img{
-    width: 50%;
-    height: 100%;
-    border-radius: 50px;
 }
 
 .text-incio{
-    width: 50%;
+    width: 80%;
     padding: 40px;
     display: flex;
     flex-direction: column;
-    justify-content:center;
     align-items: center;
-    margin-left: 10px;
-    text-align:center;
-    color: rgb(69, 50, 150);
+    text-align: justify;
+    font-family:'Londrina Solid', cursive;
+    font-size: 20px;
+    color: rgba(255, 202, 255, 0.993);
 }
-.text-incio:hover{
-    color: rgb(6, 7, 63);
-    font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: medium;
-}
-
 
 .section-lineup{
-    margin: 50px 0px;
     display: flex;
-    position: relative;
-    /* box-shadow: -4px 8px 62px 5px rgba(122, 1, 76, 0.75);
-    -webkit-box-shadow: -4px 8px 62px 5px rgba(122, 1, 76, 0.75);
-    -moz-box-shadow: -4px 8px 62px 5px rgba(122, 1, 76, 0.75); */
-    
+
 }
 .banda{
-    padding: 20px;
+    padding: 10px;
     margin:10px;
     width: 100%;
-    /* height: 60%; */
-    position:sticky;
     border:20px;
     border-radius: 40px;
-    background-color: thistle;
+    background-color: rgb(37, 37, 36);
 }
 .banda img{
     border-radius: 30px;
@@ -115,70 +98,66 @@ nav a:hover{
     object-position: top;
 }
 .banda h3{
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 25px;
+    color: rgba(255, 202, 255, 0.993);
 }
 .banda p{
     padding: 10px;
-    font-family:'Fira Sans Condensed', sans-serif;
-    font-size: medium;
+    text-align: center;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 25px;
+    color: rgba(255, 202, 255, 0.993);
 }
 .info{
     width: 100%;
-    margin: 40px;
-    padding: 50px;
-    /* justify-content: center; */
+    margin-top: 40px;
+    padding: 20px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .text-info{
     width: 30%;
-    padding: 30px;
     height: 75%;
-    color: lightyellow;
     display: flex;
     flex-direction: column;
     text-align: justify;
-    font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: x-large;
+    font-family:  'Londrina Solid', cursive;
+    font-size: 25px;
+    color: rgba(255, 202, 255, 0.993);
 
 }
 .boton-info {
     width: fit-content;
     border: none;
-    color: white;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     border-radius: 8px;
-    font-family: 'Fira Sans Condensed', sans-serif;;
+    font-family:  'Londrina Solid', cursive;
     font-size: medium;
-
+    background-color: rgba(236, 199, 236, 0.993);
+    color: rgb(0, 0, 0);
+}
+.boton-info:hover{
+    cursor: pointer;
+    background-color: rgba(201, 14, 201, 0.993);
 }
 
-.boton-info {
-    background-color: #4CAF50; /* Green */
-    color: white;
-}
 .info iframe{
-    margin-left: 20%;
-    border-radius: 1000px;
+    margin-left: 20px;
+    padding: 20px;
+
 }
 
 .buy{
-
     width: 100%;
     padding: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: url( https://img2.rtve.es/v/4129004?w=1600&preview=1500844843582.jpg);
-    background-size:contain;
-    /* box-shadow: -4px 8px 62px 5px rgba(122, 1, 76, 0.75);
-    -webkit-box-shadow: -4px 8px 62px 5px rgba(122, 1, 76, 0.75);
-    -moz-box-shadow: -4px 8px 62px 5px rgba(122, 1, 76, 0.75); */
 
 
 }
@@ -186,8 +165,8 @@ nav a:hover{
     padding: 20px;
     background-color: rgba(22, 22, 21, 0.596);
     border-radius: 40px;
-    font-family:'Fira Sans Condensed', sans-serif;
-    color: linen;
+    font-family: 'Londrina Solid', cursive;
+    color: rgba(255, 202, 255, 0.993);
 }
 .pasos-inputs{
     padding: 20px;
@@ -196,37 +175,68 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     border-radius: 40px;
-    font-family:'Fira Sans Condensed', sans-serif;
-    color: linen;
+    font-family:'Londrina Solid', cursive;
+    color: rgba(255, 202, 255, 0.993);
 }
 .pago input{
     display: inline-block;
 }
 .button-buy{
     border-radius: 20px;
-    background-color: #4CAF50; /* Green */
-    color: rgb(253, 253, 253);
-    font-family: 'Fira Sans Condensed', sans-serif;
+    background-color: rgba(236, 199, 236, 0.993);
+    color: rgb(0, 0, 0);
+    font-family:  'Londrina Solid', cursive;
     font-size: medium;
 }
+.button-buy:hover{
+    cursor: pointer;
+    background-color: rgba(201, 14, 201, 0.993);
+}
+
 footer{
     padding: 20px;
     width: 100%;
     background-color: rgb(0, 0, 0);
 }
 .newsletter{
-    width:50%0%;
-    height: 50%;
+    width:100%;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: linen;
+    color: rgba(255, 202, 255, 0.993);
 }
 .submit{
+    padding: 10px;
     border-radius: 20px;
-    background-color: #4CAF50; /* Green */
-    color: rgb(253, 253, 253);
-    font-family: 'Fira Sans Condensed', sans-serif;
+    background-color: rgba(236, 199, 236, 0.993);
+    color: rgb(0, 0, 0);
+    font-family:  'Londrina Solid', cursive;
     font-size: medium;
+}
+.submit:hover{
+    cursor: pointer;
+    background-color: rgba(201, 14, 201, 0.993);
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+}
+.face{
+    margin-right: 10px;
+}
+.face:hover{
+    color: 3b5998;
+}
+.twitch:hover{
+    color: 9146ff;
+}
+.youtube{
+    margin-left:10px;
+}
+.youtube:hover{
+    color: ff0000;
 }
