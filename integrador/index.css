@@ -1,0 +1,384 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Fjalla One', sans-serif;;
+    font-size: 1.1rem;
+    line-height: 1.4em;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-color: #000;
+}
+.portada{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(/5500b9cf84273.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: #ffffff;
+}
+.logo-portada{
+    width: 35%;
+    position: absolute;
+    animation-name:rotate;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.opacity{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.navigation{  
+    width: 100%;
+    z-index:100;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background-image: radial-gradient(circle at 48.81% 43.24%, #7b7b78 0,
+     #50505b 50%, #25293f 100%);
+     border: solid rgb(248, 246, 246);
+}
+.logo{
+    margin-left:10px;
+    width: 20%;
+    font-size: 2em;
+    color: rgb(255, 196, 2);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+}
+.logo:hover{
+    cursor: pointer;
+    font-size: 3em;
+}
+
+.items{
+    margin: 20px;
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.items li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-family: 'Fjalla One', sans-serif;
+    /* font-size: 1em; */
+    text-transform: uppercase;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in;
+}
+.items li a:hover{
+    text-decoration: underline;
+}
+
+.items a:hover{
+    color:rgb(255, 196, 2);  
+}
+@media all and (max-width: 800px){ 
+    .navigation{
+        width: 100%;
+        flex-direction: column;
+
+    }
+    .items li a{
+        width: auto;
+        margin:5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@media all and (max-width: 475px){ 
+    .navigation{
+        width:100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .items{
+        margin-left:20px;
+        width: auto;
+        display: inline-block;
+        
+    }
+    .logo{
+        margin-left: 0;
+        font-size: 2em;
+    }
+}
+
+.productos{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: blanchedalmond;
+}
+.productos h2{
+    margin-top: 40px;
+}
+.slide{
+    margin-top: 40px;
+}
+.slide img{
+    height:65vh;
+    object-fit: contain;
+}
+.contenedor-cards{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card-producto{
+    margin:40px;
+    padding: 20px;
+    width: 20%;
+    height: 40%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: black;
+    background-color: #FFFFFF;
+    border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+    animation-name: respiración;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.card-producto img{
+    width: 40%;
+    height: 200px;
+    object-fit: contain;
+}
+.card-producto h4{
+    margin-top: 20px;
+}
+.tachado{
+    text-decoration: line-through;
+}
+.button-product{
+    margin: 5px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color:rgb(118, 181, 245);
+    color: #FFFFFF;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.button-product span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .button-product span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button-product:hover span {
+    padding-right: 25px;
+  }
+  
+  .button-product:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+@media all and (max-width:800px){
+    .contenedor-cards{
+        margin-top: 10px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+     }
+    .button-product{
+        margin: 5px;
+        display: inline-block;
+        border-radius: 4px;
+        border: none;
+        text-align: center;
+        font-size: 1em;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+
+.quienes-somos{
+    margin-top: 80px;
+    width: 100%;
+    height:auto;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.card-qs{
+    margin: 10px;
+    padding: 20px;
+    background-image: radial-gradient(circle at 48.81% 43.24%, #7b7b78 0,
+     #50505b 50%, #25293f 100%);
+    width: 85%;
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+    background-image: radial-gradient(circle at 48.81% 43.24%, #7b7b78 0,
+#50505b 50%, #25293f 100%);
+border: solid rgb(248, 246, 246);
+}
+.video{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.presentacion{
+    margin: 10px;
+    padding: 10px;
+    width: 70%;
+    height: 100%;
+    text-align: justify;
+    color: #ffffff;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1vw;
+    
+}
+.presentacion h4{
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.contacto{
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+form{
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle at 48.81% 43.24%, #7b7b78 0,
+    #50505b 50%, #25293f 100%);
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border: solid rgb(248, 246, 246);
+}
+.input-f{
+    /* margin-left: 20px; */
+    width: 80%;
+    background:rgba(255, 255, 255, 0.521);
+}
+
+.btn{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 4px;
+    background-color:rgba(168, 238, 138, 0.767);
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgba(130, 240, 83, 0.767);
+}
+.redes{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.redes a{
+    text-decoration: none;
+    color: ivory;
+}
+.face{
+    margin-right: 10px;
+}
+.face:hover{
+    color: 3b5998;
+    cursor: pointer;
+}
+.twitch:hover{
+    color: 9146ff;
+    cursor: pointer;
+}
+.youtube{
+    margin-left:10px;
+}
+.youtube:hover{
+    color: ff0000;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: flex-end;
+}
+.copy{
+    margin-top: 80px;
+    width: 100%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1vw;
+}
+
