@@ -135,11 +135,11 @@ body{
     background-color: #000;
     color: blanchedalmond;
 }
-.productos h2{
+.h2{
     margin-top: 40px;
     font-family: 'Fjalla One', sans-serif;
     text-transform: uppercase;
-    font-size: 2vw;
+    font-size: 20px;
 }
 .slide{
     margin-top: 40px;
@@ -154,6 +154,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
 }
 .card-producto{
     margin:40px;
@@ -230,7 +232,7 @@ body{
         width: 100%;
         flex-direction: column;
         align-items: center;
-        font-size: 30px;
+        font-size: 20px;
      }
      .card-producto{
         width: 70%;
@@ -245,9 +247,6 @@ body{
         font-size: 1em;
         padding: 10px;
         width: 100%;
-    }
-    .h2{
-        font-size: 100px;
     }
 }
 
